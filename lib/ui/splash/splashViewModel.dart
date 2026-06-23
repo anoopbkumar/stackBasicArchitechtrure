@@ -7,7 +7,6 @@ import '../../app/app.router.dart';
 import '../login/loginView.dart' as routes;
 
 class SplashviewModel extends BaseViewModel {
-
   @override
   void dispose() {
     // TODO: implement dispose
@@ -15,9 +14,7 @@ class SplashviewModel extends BaseViewModel {
   }
 
   Future<void> init() async {
-   await Future.delayed(Duration(seconds: 2));
-   navigationservice.pushNamedAndRemoveUntil(Routes.loginview);
+    await Future.delayed(Duration(seconds: 5));
+   // navigationservice.pushNamedAndRemoveUntil(Routes.loginview);
   }
-
-
 }

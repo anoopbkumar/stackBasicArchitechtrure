@@ -18,8 +18,11 @@ class $AssetsImagesGen {
   AssetGenImage get firebase =>
       const AssetGenImage('assets/images/firebase.png');
 
+  /// File path: assets/images/logo.png
+  AssetGenImage get logo => const AssetGenImage('assets/images/logo.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [firebase];
+  List<AssetGenImage> get values => [firebase, logo];
 }
 
 class Assets {
